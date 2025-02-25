@@ -1,10 +1,10 @@
 import React from "react";
 import ThemeToggle from "../dropdown/mode-toggle";
 
-export default function Switcher() {
+export default function Mode() {
   return (
     <>
-      <span className="text-xs text-muted-foreground">Mode</span>
+      <p className="text-xs text-muted-foreground">Mode</p>
       <ThemeToggle />
     </>
   );
