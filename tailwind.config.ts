@@ -12,6 +12,10 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        dock: {
+          light: "#E6E6E6",
+          dark: "#191919",
+        },
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -55,6 +59,12 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      borderColor: {
+        dock: {
+          light: "rgba(0, 0, 0, 0.1)",
+          dark: "rgba(255, 255, 255, 0.1)",
+        },
       },
     },
   },

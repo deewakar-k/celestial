@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Github, Twitter } from "lucide-react";
-import ThemeToggle from "../dropdown/mode-toggle";
 
 const Navbar = () => {
   return (
@@ -26,7 +25,6 @@ const Navbar = () => {
             <Twitter className="size-4" />
             <span className="sr-only">Twitter</span>
           </Link>
-          <ThemeToggle />
         </div>
       </div>
     </nav>
