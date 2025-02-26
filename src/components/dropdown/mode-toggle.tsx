@@ -1,27 +1,38 @@
 "use client";
-
-import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 
-const ThemeToggle = () => {
+import { Switch } from "@/components/ui/switch";
+
+export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
-    <Button
-      variant="ghost"
-      onClick={toggleTheme}
-      aria-label="Toggle theme"
-      className="hover:bg-transparent p-0 m-0 gap-0 h-7"
-    >
-      <Sun className="size-3 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <Moon className="absolute size-3 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-    </Button>
+    <div className="flex items-center space-x-2 transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+      <Sun
+        className={`h-[1.2rem] w-[1.2rem] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+          theme === "dark"
+            ? "text-[#A1A1AA] scale-75 rotate-12"
+            : "text-foreground scale-100 rotate-0"
+        }`}
+      />
+      <Switch
+        checked={theme === "dark"}
+        onCheckedChange={toggleTheme}
+        aria-label="Toggle theme"
+        className="transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+      />
+      <Moon
+        className={`h-[1.2rem] w-[1.2rem] transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+          theme === "light"
+            ? "text-[#A1A1AA] scale-75 rotate-12"
+            : "text-foreground scale-100 rotate-0"
+        }`}
+      />
+    </div>
   );
-};
-
-export default ThemeToggle;
+}
