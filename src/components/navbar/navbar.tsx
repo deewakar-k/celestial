@@ -4,7 +4,7 @@ import { Github, Twitter } from "lucide-react";
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4">
-      <div className="flex items-center justify-between w-full max-w-2xl p-4 rounded-full bg-background/80 backdrop-blur-sm border dark:border-white/10 border-black/10">
+      <div className="flex items-center justify-between w-full max-w-2xl p-4 rounded-lg bg-background/80 backdrop-blur-sm border dark:border-white/10 border-black/10">
         <Link href="/" className="text-xl font-medium">
           celestial
         </Link>
