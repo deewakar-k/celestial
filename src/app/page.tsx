@@ -16,7 +16,7 @@ export default function Home() {
       <div className="flex-grow mb-48">
         <Bento />
       </div>
-      <div className="mb-16">
+      <div className="mb-8">
         <Dock />
       </div>
       <div className="mt-auto">
