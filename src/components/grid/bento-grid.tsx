@@ -1,4 +1,4 @@
-import CardsChat from "../cards/chat";
+import { CardsChat } from "../cards/chat";
 import CardsCreateAccount from "../cards/create-account";
 import CardsDataTable from "../cards/data-table";
 import CardsMetric from "../cards/metric";

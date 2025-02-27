@@ -1,19 +1,25 @@
 "use client";
 
 import * as React from "react";
-import { Check, Command, Plus, Send } from "lucide-react";
+import { Check, Plus, Send } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "../ui/tooltip";
-import { Button } from "../ui/button";
-import { Input } from "../ui/input";
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
 import {
   Dialog,
   DialogContent,
@@ -21,14 +27,15 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "../ui/dialog";
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
 import {
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from "../ui/command";
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
 const users = [
   {
     name: "Olivia Martin",
@@ -59,7 +66,7 @@ const users = [
 
 type User = (typeof users)[number];
 
-export default function CardsChat() {
+export function CardsChat() {
   const [open, setOpen] = React.useState(false);
   const [selectedUsers, setSelectedUsers] = React.useState<User[]>([]);
 
