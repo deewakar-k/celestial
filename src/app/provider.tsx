@@ -1,10 +1,17 @@
+import { PostHogProvider } from "@/components/provider/posthog-provider";
 import { ThemeProvider } from "@/components/provider/theme-provider";
 import React from "react";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
-      {children}
-    </ThemeProvider>
+    <PostHogProvider>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="light"
+        enableSystem={false}
+      >
+        {children}
+      </ThemeProvider>
+    </PostHogProvider>
   );
 }
