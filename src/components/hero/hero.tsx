@@ -5,13 +5,13 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="space-y-10 py-24">
-      <div className="container flex flex-col items-center justify-center gap-6 text-center">
+    <section className="w-full space-y-10 py-24">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-6 text-center px-4 sm:px-6">
         <motion.h1
           initial={{ opacity: 0, filter: "blur(8px)", y: 15 }}
           animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="text-3xl leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1]"
+          className="text-3xl leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1] max-w-4xl"
         >
           Design Now, Code Later
         </motion.h1>

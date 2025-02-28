@@ -6,20 +6,20 @@ import Navbar from "@/components/navbar/navbar";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen">
-      <div className="mb-28">
+    <main className="flex flex-col min-h-screen w-full overflow-x-hidden">
+      <div className="w-full mb-28">
         <Navbar />
       </div>
-      <div className="mb-56">
+      <div className="w-full mb-56">
         <Hero />
       </div>
-      <div className="flex-grow mb-48">
+      <div className="w-full flex-grow mb-48">
         <Bento />
       </div>
-      <div className="mb-8">
+      <div className="w-full mb-8">
         <Dock />
       </div>
-      <div className="mt-auto">
+      <div className="w-full mt-auto">
         <Footer />
       </div>
     </main>

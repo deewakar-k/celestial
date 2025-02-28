@@ -29,8 +29,6 @@ export function Dock() {
 
   return (
     <>
-      {/* Your other content */}
-
       <div
         className={`fixed inset-x-0 bottom-0 flex justify-center transition-transform duration-300 ${
           isVisible ? "translate-y-0" : "translate-y-full"
