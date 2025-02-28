@@ -1,3 +1,4 @@
+import FixedButtons from "@/components/buttons/fixed-buttons";
 import { Dock } from "@/components/dock/dock";
 import Footer from "@/components/footer/footer";
 import Bento from "@/components/grid/bento-grid";
@@ -22,6 +23,7 @@ export default function Home() {
       <div className="w-full mt-auto">
         <Footer />
       </div>
+      <FixedButtons />
     </main>
   );
 }
