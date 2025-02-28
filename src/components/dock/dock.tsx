@@ -15,7 +15,7 @@ export function Dock() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
-      const nearBottom = scrollPosition >= document.body.scrollHeight - 100;
+      const nearBottom = scrollPosition >= document.body.scrollHeight - 300;
 
       setIsVisible(!nearBottom);
     };

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Twitter } from "lucide-react";
+import { Icons } from "../icons/icons";
 
 const Navbar = () => {
   return (
@@ -14,7 +14,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Github className="size-4" />
+            <Icons.gitHub className="size-4" />
             <span className="sr-only">GitHub</span>
           </Link>
           <Link
@@ -22,7 +22,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Twitter className="size-4" />
+            <Icons.twitter className="size-4" />
             <span className="sr-only">Twitter</span>
           </Link>
         </div>

@@ -3,9 +3,10 @@
 import React from "react";
 import { ToggleGroup, ToggleGroupItem } from "../ui/toggle-group";
 import { radiusSizes } from "@/lib/data";
+import useRadius from "@/hooks/use-radius";
 
 export default function Radius() {
-  const [radius, setRadius] = React.useState("0");
+  const { radius, setRadius } = useRadius();
 
   return (
     <>

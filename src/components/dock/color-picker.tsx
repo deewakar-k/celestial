@@ -8,6 +8,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Input } from "../ui/input";
+import { useColorStore } from "@/store/use-color-store";
 
 interface PopoverPickerProps {
   color: string;
@@ -33,8 +34,8 @@ const PopoverPicker: React.FC<PopoverPickerProps> = ({ color, onChange }) => {
 };
 
 export const ColorPicker: React.FC = () => {
-  const [color, setColor] = useState("#aabbcc");
-  const [inputValue, setInputValue] = useState("#aabbcc");
+  const { color, setColor } = useColorStore();
+  const [inputValue, setInputValue] = useState(color);
 
   useEffect(() => {
     setInputValue(color);
