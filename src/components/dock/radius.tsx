@@ -10,7 +10,6 @@ export default function Radius() {
 
   return (
     <>
-      <span className="text-xs text-muted-foreground">Radius</span>
       <ToggleGroup
         type="single"
         value={radius}

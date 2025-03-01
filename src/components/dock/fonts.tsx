@@ -18,14 +18,13 @@ export default function Fonts() {
   const filteredFonts = React.useMemo(() => {
     return fonts
       .filter((font: string) =>
-        font.toLowerCase().includes(search.toLowerCase())
+        font.toLowerCase().includes(search.toLowerCase()),
       )
       .slice(0, 5);
   }, [fonts, search]);
 
   return (
     <>
-      <span className="text-xs text-muted-foreground pl-1">Fonts</span>
       <DropdownMenu>
         <DropdownMenuTrigger
           asChild

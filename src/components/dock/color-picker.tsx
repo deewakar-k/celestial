@@ -57,11 +57,7 @@ export const ColorPicker: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-start gap-y-2">
-      <p className="text-xs text-muted-foreground w-full pb-1 text-start">
-        Color
-      </p>
-
+    <div className="flex flex-col items-start gap-y-2 pt-1">
       <div className="flex items-center gap-2">
         <PopoverPicker color={color} onChange={setColor} />
         <Input
