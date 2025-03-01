@@ -5,11 +5,7 @@ import React from "react";
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
     <PostHogProvider>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="light"
-        enableSystem={false}
-      >
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
         {children}
       </ThemeProvider>
     </PostHogProvider>
