@@ -1,4 +1,4 @@
-# ![celestial logo](https://raw.githubusercontent.com/deewakar-k/celestial/public/celestial.svg) celestial 
+# ![celestial logo](https://raw.githubusercontent.com/deewakar-k/celestial/main/public/celestial.svg) 
 craft your ui universe with Celestial.
 
 ### what is Celestial?
